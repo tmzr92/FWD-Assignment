@@ -1,8 +1,6 @@
 # FWD-Assignment1
 My 1st github repository
 <br>
-Author- Tameez
-
 👋 Hi, I’m @tmzr92 <br>
 - 👀 I’m interested in Web Dev. <br>
 - 🌱 I’m currently learning React <br>
