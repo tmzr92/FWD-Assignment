@@ -1,100 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="externalsheet.css">
     <title>Tameez</title>
-    <style>
-        p{
-            font-variant: small-caps;
-            border: 2px solid red;
-            text-align:center;
-            line-height: 30px;
-            background-color: grey;
-            word-wrap: break-word;
-        }
-        form{
-            border: 1px solid black;
-            padding-left: 4px;
-            padding-top: 5px;
-            background-color: rgb(113, 241, 246);
-            width: 500px;
-        }
-        a:hover{
-            background-color: aqua;
-            color: red;
-        }
-        .head {
-            border: 2px solid black;
-            font-size: 33px;
-            text-indent: 2px;
-            position: absolute;
-            top: 25px;
-            left: 97px;
-        }
-
-        .contact {
-            text-transform: capitalize;
-            border: 2px solid black;
-            font-size: 33px;
-            text-indent: 2px;
-            position: absolute;
-            top: 25px;
-            left: 1085px;
-        }
-
-        img {
-            border: 2px solid black;
-        }
-    </style>
-</head>
-<body>
-    <img src="img_avtar.avif" style="border-radius: 40%; width: 70px;" alt="Avatar">
-    <div>
-        <a class="head" href="Home.html" target="_parent">
-            Tameez
-        </a>
-    </div>
-    <div class="contact">
-        <a href="contact.html" target="_parent">Contact Us</a>
-    </div>
-    <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur tempore doloremque omnis? Modi sequi cumque hic ipsa, nisi voluptate et est optio nihil reiciendis architecto ad sit doloribus id iste nemo neque molestiae. Assumenda ipsum maxime magnam itaque, aperiam eveniet iure iusto natus numquam eius eligendi vel maiores expedita earum minus aliquid. Doloremque laudantium, recusandae odit ab neque iste nobis debitis, quod incidunt error illum in eaque sequi cupiditate, soluta odio deserunt laborum. Nemo dolores excepturi sequi, quaerat ea est quibusdam voluptatem atque doloremque deserunt cupiditate explicabo accusantium. Similique vel ipsam nesciunt distinctio sunt quis fugit optio ad inventore facilis?</p>
     
-    <h3 style="text-decoration: underline;">
-        Form:
-    </h3>
-    <form action="javascript:submitForm()" onSubmit="return validate()" method="get">
-        <label style="font-weight: 600;" for="name">Name:</label>&nbsp;
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="img_avtar.avif" alt="avatar">
+            <a href="home.html" target="_parent">Tameez</a>
+        </div>
+        <a style="position: relative; right:25px" href="contact.html" target="_parent">Contact</a>
+    </div>
+    <div class="par">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dicta ipsum esse corporis dignissimos vero
+        deleniti minima pariatur molestias, vel atque fugit, quas magni eveniet ipsa totam iusto fuga recusandae
+        sapiente. In accusantium quisquam, debitis libero quibusdam vel inventore natus harum optio aliquid maiores
+        aliquam adipisci unde nulla dolores totam fuga? Rem deleniti ducimus quae esse omnis aut fugiat rerum sequi et
+        aperiam quam inventore error saepe dignissimos, autem, placeat odio laborum consequuntur. Quo voluptas libero
+        modi ipsa unde maiores ipsum voluptates nulla nesciunt consequuntur ipsam architecto, repudiandae aliquam nobis
+        tempore. Possimus earum reiciendis voluptatum non aliquid reprehenderit facilis eligendi!
+    </div>
+    <form action="javascript:submitform()" onSubmit="return validate()">
+        <label for="name">Name:</label>&nbsp;
         <input type="text" name="name" id="name" required><br><br>
-        <label style="font-weight: 600;" for="email">Email:</label>&nbsp;
-        <input type="text" name="email" id="email" required>
-        <br><br>
-        <label style="font-weight: 600;" for="Genre">Favourite Genre:</label>&nbsp;
-        <input list="Genres" name="Genre" id="Genre" required>
-        <datalist id="Genres">
-            <option value="Action">
-            <option value="Thriller">
+        <label for="email">Email:</label>&nbsp;
+        <input type="text" name="email" id="email" required><br><br>
+        <label for="genre">Favourite Genre:&nbsp;</label>
+        <input list="genres" name="genre" id="genre">
+        <datalist id="genres">
             <option value="Pop">
-            <option value="Romantic">
             <option value="Patriot">
-        </datalist><br><br>
-        <input type="checkbox" name="checkbox" id="checkbox">
-        <label for="checkbox">
-        Subscribe to our newsletter via E-Mail
-        </label><br>
-        <input style="position: relative;top:30px;left: 300px; width:70px" type="submit">
+            <option value="Romantic">
+            <option value="Action">
+            <option value="Horror">
+        </datalist>
+        <input style="position: relative; top:35px; right:120px" type="submit">
     </form>
-    <script>
-        function validate(){
-            return true;
-        }
-        function submitForm(){
-            window.alert("Form Submitted")
-        }
-    </script>
-    <footer style="position: relative;top:50px;float:right;">
-        <h4>All Rights Reserved&reg;</h4>
+    <footer style="position:relative;top:220px;float:right;font-weight:600">
+        All Rights Reserved &reg;
     </footer>
 </body>
+
 </html>
